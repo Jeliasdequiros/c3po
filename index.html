@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>POO Proyecto</title>
+        <link
+            rel="stylesheet"
+            href="../node_modules/normalize.css/normalize.css"
+        />
+        <link rel="stylesheet" href="./src/css/estilos.css" />
+    </head>
+    <body>
+        <main>
+            <h1 id="titulo" class="titulo">CENTRO DE ESTUDIOS</h1>
+
+            <!-- FORMULARIO -->
+            <form id="formulario">
+                <label>
+                    Nombre Curso:
+                    <input type="text" name="nombreCurso" required />
+                </label>
+                <label>
+                    Imagen Curso:
+                    <input type="text" name="rutaImagen" required />
+                </label>
+                <label>
+                    Horas:
+                    <input type="number" name="cantidadHoras" required />
+                </label>
+                <button type="submit">Nuevo Curso</button>
+            </form>
+
+            <!-- FORMULARIO PROFESOR-->
+            <h1 id="tituloProfesor" class="tituloProfesor"> NUEVOS PROFESORES</h1>
+
+            <form id="formProfesor" class="formProfesor">
+                <label>
+                    Nombre Profesor :
+                    <input type="text" name="nombreProfesor" required />
+                </label>
+                <label>
+                    Imagen Profesor :
+                    <input type="text" name="imagenProfesor" required />
+                </label>
+                <label>
+                    Curso Impartido
+                    <input type="text" name="cursoImpartido" required />
+                </label>
+                <button type="submit">Nuevo Profesor</button>
+            </form>
+
+            <!--FORMULARIO PARA ALUMNOS -->
+            <h1 id="tituloAlumno" class="tituloAlumno">NUEVOS ALUMNOS</h1>
+
+            <form id="formAlumnos" class="formAlumnos">
+                <label>
+                    Nombre Alumno:
+                    <input type="text" name="nombreAlumno" required />
+                </label>
+                <label>
+                    Imagen Alumno:
+                    <input type="text" name="imagenAlumno" required />
+                </label>
+                <label>
+                    Nombre del curso
+                    <input type="text" name="curso" required />
+                </label>
+                <button type="submit">Nuevo alumno</button>
+            </form>
+
+
+            <!-- GRID de Cursos -->
+            <section id="curso" class="cursos"></section>
+            <!-- GRID de Profesores -->
+            <section id="profesor" class="profesores"></section>
+            <!-- GRID de Alumnos -->
+            <section id="alumno" class="alumnos"></section>
+
+ 
+        </main>
+
+        <script type="module" src="./src/js/index.js"></script>
+    </body>
+</html>
